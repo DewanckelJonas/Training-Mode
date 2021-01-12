@@ -1,0 +1,14 @@
+{
+  "eventName": "Training Lab\n",
+  "eventDescription": "Free practice with\ncomplete control.\n",
+  "eventTutorial": "",
+  "eventFile": "EvLab",
+  "eventCSSFile": "TM/EvLabCSS.dat",
+  "defaultOSD": -1,
+  "isSelectStage": true,
+  "isChooseCPU": true,
+  "use_savestates": false,
+  "disable_hazards": true,
+  "scoreType": 0,
+  "callbackPriority": 3
+}

@@ -22,7 +22,266 @@ static char nullString[] = " ";
 /// Event Defintions ///
 ////////////////////////
 
-@@GEN_CODE@@
+// lab
+// Match Data
+static EventMatchData General_Events_lab_MatchData = {
+	.timer = 3,
+	.matchType = 0,
+	.isDisableMusic = false,
+	.hideGo = true,
+	.hideReady = true,
+	.isCreateHUD = true,
+	.isDisablePause = true,
+	.timerRunOnPause = false,
+	.isHidePauseHUD = true,
+	.isShowLRAStart = true,
+	.isCheckForLRAStart = true,
+	.isShowZRetry = false,
+	.isCheckForZRetry = false,
+	.isShowAnalogStick = true,
+	.isShowScore = false,
+	.isRunStockLogic = false,
+	.isDisableHit = false,
+	.useKOCounter = false,
+	.playerKind = -1,
+	.cpuKind = -1,
+	.stage = -1,
+	.timerSeconds = 0,
+	.timerSubSeconds = 0,
+	.onCheckPause = 0,
+	.onMatchEnd = 0,
+};
+// Event Struct
+static EventDesc General_Events_lab = {
+	.eventName = "Training Lab\n",
+	.eventDescription = "Free practice with\ncomplete control.\n",
+	.eventTutorial = "",
+	.eventFile = "EvLab",
+	.isChooseCPU = true,
+	.isSelectStage = true,
+	.use_savestates = false,
+	.disable_hazards = true,
+	.scoreType = 0,
+	.callbackPriority = 3,
+	.defaultOSD = -1,
+	.matchData = &General_Events_lab_MatchData,
+};
+
+
+// lcancel
+// Match Data
+static EventMatchData General_Events_lcancel_MatchData = {
+	.timer = 1,
+	.matchType = 0,
+	.isDisableMusic = false,
+	.hideGo = true,
+	.hideReady = true,
+	.isCreateHUD = false,
+	.isDisablePause = true,
+	.timerRunOnPause = false,
+	.isHidePauseHUD = true,
+	.isShowLRAStart = true,
+	.isCheckForLRAStart = true,
+	.isShowZRetry = false,
+	.isCheckForZRetry = false,
+	.isShowAnalogStick = true,
+	.isShowScore = false,
+	.isRunStockLogic = false,
+	.isDisableHit = false,
+	.useKOCounter = false,
+	.playerKind = -1,
+	.cpuKind = -1,
+	.stage = -1,
+	.timerSeconds = 0,
+	.timerSubSeconds = 0,
+	.onCheckPause = 0,
+	.onMatchEnd = 0,
+};
+// Event Struct
+static EventDesc General_Events_lcancel = {
+	.eventName = "L-Cancel Training\n",
+	.eventDescription = "Practice L-Cancelling on\na stationary CPU.\n",
+	.eventTutorial = "TvLC",
+	.eventFile = "EvLcl",
+	.isChooseCPU = false,
+	.isSelectStage = true,
+	.use_savestates = false,
+	.disable_hazards = true,
+	.scoreType = 0,
+	.callbackPriority = 3,
+	.defaultOSD = -1,
+	.matchData = &General_Events_lcancel_MatchData,
+};
+
+
+// ledgedash
+// Match Data
+static EventMatchData General_Events_ledgedash_MatchData = {
+	.timer = 1,
+	.matchType = 0,
+	.isDisableMusic = false,
+	.hideGo = true,
+	.hideReady = true,
+	.isCreateHUD = false,
+	.isDisablePause = true,
+	.timerRunOnPause = false,
+	.isHidePauseHUD = true,
+	.isShowLRAStart = true,
+	.isCheckForLRAStart = true,
+	.isShowZRetry = false,
+	.isCheckForZRetry = false,
+	.isShowAnalogStick = true,
+	.isShowScore = false,
+	.isRunStockLogic = false,
+	.isDisableHit = false,
+	.useKOCounter = false,
+	.playerKind = -1,
+	.cpuKind = -1,
+	.stage = -1,
+	.timerSeconds = 0,
+	.timerSubSeconds = 0,
+	.onCheckPause = 0,
+	.onMatchEnd = 0,
+};
+// Event Struct
+static EventDesc General_Events_ledgedash = {
+	.eventName = "Ledgedash Training\n",
+	.eventDescription = "Practice Ledgedashes!\nUse D-Pad to change ledge.\n",
+	.eventTutorial = "TvLedDa",
+	.eventFile = "EvLdsh",
+	.isChooseCPU = false,
+	.isSelectStage = true,
+	.use_savestates = false,
+	.disable_hazards = true,
+	.scoreType = 0,
+	.callbackPriority = 3,
+	.defaultOSD = -1,
+	.matchData = &General_Events_ledgedash_MatchData,
+};
+
+
+// wavedash
+// Match Data
+static EventMatchData General_Events_wavedash_MatchData = {
+	.timer = 1,
+	.matchType = 0,
+	.isDisableMusic = false,
+	.hideGo = true,
+	.hideReady = true,
+	.isCreateHUD = false,
+	.isDisablePause = true,
+	.timerRunOnPause = false,
+	.isHidePauseHUD = true,
+	.isShowLRAStart = true,
+	.isCheckForLRAStart = true,
+	.isShowZRetry = false,
+	.isCheckForZRetry = false,
+	.isShowAnalogStick = true,
+	.isShowScore = false,
+	.isRunStockLogic = false,
+	.isDisableHit = false,
+	.useKOCounter = false,
+	.playerKind = -1,
+	.cpuKind = -1,
+	.stage = -1,
+	.timerSeconds = 0,
+	.timerSubSeconds = 0,
+	.onCheckPause = 0,
+	.onMatchEnd = 0,
+};
+// Event Struct
+static EventDesc General_Events_wavedash = {
+	.eventName = "Wavedash Training\n",
+	.eventDescription = "Practice timing your wavedash,\na fundamental movement technique.\n",
+	.eventTutorial = "TvWvDsh",
+	.eventFile = "EvWdsh",
+	.isChooseCPU = false,
+	.isSelectStage = true,
+	.use_savestates = false,
+	.disable_hazards = true,
+	.scoreType = 0,
+	.callbackPriority = 3,
+	.defaultOSD = -1,
+	.matchData = &General_Events_wavedash_MatchData,
+};
+
+
+static EventDesc* General_Events_Events[] = {
+	&General_Events_lab,
+	&General_Events_lcancel,
+	&General_Events_wavedash,
+	&General_Events_ledgedash,
+};
+static EventPage General_Events_Page = {
+	.name ="General Events",
+	.eventNum = (sizeof(General_Events_Events) / 4) -1,
+	.events = General_Events_Events,
+};
+
+// Eggsercise
+// Match Data
+static EventMatchData Minigames_Eggsercise_MatchData = {
+	.timer = 3,
+	.matchType = 0,
+	.isDisableMusic = true,
+	.hideGo = true,
+	.hideReady = true,
+	.isCreateHUD = true,
+	.isDisablePause = false,
+	.timerRunOnPause = false,
+	.isHidePauseHUD = true,
+	.isShowLRAStart = true,
+	.isCheckForLRAStart = true,
+	.isShowZRetry = true,
+	.isCheckForZRetry = true,
+	.isShowAnalogStick = true,
+	.isShowScore = false,
+	.isRunStockLogic = false,
+	.isDisableHit = false,
+	.useKOCounter = false,
+	.playerKind = -1,
+	.cpuKind = -1,
+	.stage = -1,
+	.timerSeconds = 0,
+	.timerSubSeconds = 0,
+	.onCheckPause = 0,
+	.onMatchEnd = 0,
+};
+// Event Struct
+static EventDesc Minigames_Eggsercise = {
+	.eventName = "Eggs-ercise\n",
+	.eventDescription = "Break the eggs! Only strong hits will\nbreak them. DPad down = free practice.",
+	.eventTutorial = "TvLC",
+	.eventFile = 0,
+	.isChooseCPU = false,
+	.isSelectStage = true,
+	.use_savestates = false,
+	.disable_hazards = true,
+	.scoreType = 0,
+	.callbackPriority = 3,
+	.defaultOSD = -1,
+	.matchData = &Minigames_Eggsercise_MatchData,
+};
+
+
+static EventDesc* Minigames_Events[] = {
+	&Minigames_Eggsercise,
+};
+static EventPage Minigames_Page = {
+	.name ="Minigames",
+	.eventNum = (sizeof(Minigames_Events) / 4) -1,
+	.events = Minigames_Events,
+};
+
+
+//////////////////
+/// Page Order ///
+//////////////////
+
+static EventPage **EventPages[] = {
+	&Minigames_Page,
+	&General_Events_Page,
+};
 
 ////////////////////////
 /// Static Variables ///

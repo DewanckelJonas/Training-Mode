@@ -1,0 +1,14 @@
+{
+  "eventName": "L-Cancel Training\n",
+  "eventDescription": "Practice L-Cancelling on\na stationary CPU.\n",
+  "eventTutorial": "TvLC",
+  "eventFile": "EvLcl",
+  "eventCSSFile": "",
+  "defaultOSD": -1,
+  "isSelectStage": true,
+  "isChooseCPU": false,
+  "use_savestates": false,
+  "disable_hazards": true,
+  "scoreType": 0,
+  "callbackPriority": 3
+}
